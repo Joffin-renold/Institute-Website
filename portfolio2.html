@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- Include the ScrollReveal library -->
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+        }
+
+        li a:hover {
+            text-decoration: underline #7fff00;
+            color: white;
+        }
+
+        section {
+            height: 100vh;
+            animation: scrolls ease-in-out both;
+            animation-timeline: view();
+            animation-range: entry 50% cover 50%;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease, transform 1.5s ease;
+            animation-range: entry 50% cover 50%;
+        }
+
+        /* ... (Your existing styles) ... */
+
+        @keyframes scrolls {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease, transform 1.5s ease;
+        }
+
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <section id="block1" class="reveal">
+            <ul>
+                <li><a href="#block1">Home</a></li>
+                <li><a href="#block2">About</a></li>
+                <li><a href="#block3">Services</a></li>
+                <li><a href="#block5">Skills</a></li>
+                <li><a href="#block4">Contact us</a></li>
+            </ul>
+            <img class="image1" src="imag/placeholder.jpg" alt="Placeholder Image">
+            <div class="content1">
+                <h1>Hi, I am</h1>
+                <h2>Your Name</h2>
+                <p>Your introduction text goes here.</p>
+                <p><i class="fa fa-whatsapp" style="font-size:35px;color:green; padding: 5px;"></i>
+                    <i class="fa fa-instagram" style="font-size:35px;color: plum; padding: 5px;"></i>
+                    <i class="fa fa-linkedin-square" style="font-size:35px;color:blue; padding: 5px;"></i></p>
+            </div>
+        </section>
+
+        <section id="block2" class="reveal">
+            <img class="image2" src="imag/placeholder.jpg" alt="Placeholder Image">
+            <div class="content2">
+                <h1>About me</h1>
+                <p>Your about me text goes here.</p>
+                <p style="border: 2px solid whitesmoke; width: 100px; height: 28px;
+                text-align: center; border-radius: 5px;background-color: rgb(114, 4, 85); color:aliceblue;">Read more</p>
+            </div>
+        </section>
+
+        <section id="block3" class="reveal">
+            <!-- ... (Your existing code for services section) ... -->
+            <img class="image2" src="imag/WhatsApp Image 2024-02-02 at 10.16.30_5404ce0a.jpg">
+        <div class="content2">
+        <h1>About me</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam placeat, soluta odit sapiente, expedita, nemo voluptatum minus quod dignissimos tempora unde? Tempore incidunt ducimus mollitia quo recusandae. Numquam, error nostrum.
+        Dolores voluptates quidem deleniti quia ea? Facilis odio rerum impedit, ipsam autem eos amet consequuntur quaerat asperiores dolore! Neque veniam asperiores laudantium nemo nesciunt obcaecati voluptatum reiciendis similique cupiditate aut.
+        Fuga possimus id in error veritatis rem quasi. Incidunt sapiente, recusandae eaque esse fugiat assumenda unde veniam repellat provident asperiores iure deleniti, reiciendis exercitationem quas voluptatum magnam molestiae! Id, dicta?</p>
+        <p style=" border: 2px solid whitesmoke;
+        width: 100px; height: 28px;
+        text-align: center;
+        border-radius: 5px;background-color:  rgb(114, 4, 85); color:aliceblue;">Read more</p>
+    </div>
+ </section>
+
+    <section id="block3">
+      <h2 style="text-align: center; text-shadow: 2px 1px 3px goldenrod; color: aliceblue; font-size: 45px; padding-top: 100px;" id="ser"> My services </h2>
+      <div id="crd">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+    <div class="card" style="width: 18rem;" id="c1">
+        <img src="imag/top11.png" class="card-img-top" style="height: 140px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WEB DEVELOPMENT</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at praesentium repudiandae, eius possimus expedita tempore accusamus, cumque deleniti repellat tenetur, temporibus omnis. Maiores qui natus ea magni possimus? Repellendus..</p>
+          <p style=" border: 2px solid whitesmoke;
+          width: 100px; height: 28px;
+          text-align: center;
+          border-radius: 5px;background-color: rgb(43, 76, 222); color:aliceblue;">Read more</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;" id="c2">
+        <img src="imag/what-is-web-design.webp" class="card-img-top" style="height: 185px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WEB DESIGN</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae minus libero rerum fuga hic error cupiditate atque quidem nemo quia veritatis corrupti, nostrum, ipsa quibusdam odio itaque quis! Doloremque!.</p>
+          <p style=" border: 2px solid whitesmoke;
+          width: 100px; height: 28px;
+          text-align: center;
+          border-radius: 5px;background-color: rgb(43, 76, 222); color:aliceblue;">Read more</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;" id="c3">
+        <img src="imag/01b4GWdIDy2hlLfEmihhSbv-1.fit_lim.size_850x490.v1678307759.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">VEDIO EDITING</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid minima laboriosam vel harum quod! Alias animi maxime illo, perferendis, distinctio iusto labore repellat sapiente, quo fuga voluptas id molestias..</p>
+          <p style=" border: 2px solid whitesmoke;
+          width: 100px; height: 28px;
+          text-align: center;
+          border-radius: 5px;background-color: rgb(43, 76, 222); color:aliceblue;">Read more</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;" id="c4">
+          <img src="imag/image_processing20210912-17354-7oyvrf.png" class="card-img-top" style="height: 165px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PHOTOGRAPHY</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores architecto temporibus, tenetur placeat amet id repudiandae totam reiciendis voluptas ullam iusto. Minima animi ratione, libero fuga necessitatibus natus assumenda cupiditate..</p>
+            <p style=" border: 2px solid whitesmoke;
+            width: 100px; height: 28px;
+            text-align: center;
+            border-radius: 5px;background-color: rgb(43, 76, 222); color:aliceblue;">Read more</p>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+        </section>
+
+        <section id="block5" class="reveal">
+            <!-- ... (Your existing code for skills section) ... -->
+            <h1 style="text-align: center; text-shadow: 1px 1px 2px #7fff00; padding-top: 100px; color: white;">MY SKILLS</h1>
+            <div class="lang">
+              <p>HTML</p>
+              
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">80%</p>
+                <div class="in1">
+              <!-- <p class="bar"></p> -->
+            </div>
+            </div>
+              <p>CSS</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">80%</p>
+                <div class="in2">
+            </div>
+          </div>
+              <p>BOOTSTRAP</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">70%</p>
+                <div class="in3">
+            </div>
+          </div>
+              <p>JAVASCRIPT</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">85%</p>
+                <div class="in4">
+            </div>
+          </div>
+          <p>REACTJS</p>
+          <div class="out">
+            <p style="float: right; margin-top: -30px;">75%</p>
+            <div class="in5">
+            </div>
+          </div>
+        </div>
+      
+      
+            <div class="skills">
+              <p>WEB DEVELOPMENT</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">95%</p>
+                <div class="in6">
+              <!-- <p class="bar2">-</p> -->
+            </div>
+          </div>
+              <p>WEB DESIGNING</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">85%</p>
+                <div class="in7">
+              <!-- <p class="bar2">-</p> -->
+            </div>
+          </div>
+              <p>VIDEO EDITING</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">75%</p>
+                <div class="in8">
+              <!-- <p class="bar2">-</p> -->
+            </div>
+          </div>
+              <p>PHOTOGRAPHY</p>
+              <div class="out">
+                <p style="float: right; margin-top: -30px;">80%</p>
+                <div class="in9">
+              <!-- <p class="bar2">-</p> -->
+            </div>
+          </div>
+        </div>
+           
+        </section>
+    </div>
+
+    <section id="block4" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="last">
+                        <img src="imag/placeholder.jpg" class="card-img-top" alt="Placeholder Image">
+                        <div class="card-body">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="username"></label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" id="username">
+                                    <label for="mail"></label>
+                                    <input type="text" class="form-control" placeholder="contact mail" id="mail">
+                                    <label for="area"></label>
+                                    <textarea class="form-control" placeholder="Your message" cols="20" rows="4"></textarea>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                            <h7 style="margin-left: 35px;">Contact on 24/7 call services
+                                <a class="text-warning" style="text-decoration: none;">123456789</a>
+                            </h7>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize ScrollReveal
+            const sr = ScrollReveal();
+
+            // Add reveal class to each section
+            sr.reveal('.reveal', {
+                delay: 200,
+                distance: '20px',
+                duration: 800,
+                easing: 'ease-in-out',
+                origin: 'bottom',
+                reset: true,
+                scale: 0.5
+            });
+        });
+    </script>
+</body>
+</html>

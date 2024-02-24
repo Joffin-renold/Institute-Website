@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>About Us</title>
+  <style>
+     body {
+      margin: 0;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+     .section-center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      opacity: 1;
+      animation: fadeInFromBottom 10ms ease-in-out forwards;
+    }
+
+    .flex-item {
+      flex: 0 0 calc(33.333% - 20px); /* Three items in a row with some spacing */
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease-in-out;
+    }
+    .flex-item:hover {
+      transform: scale(1.1);
+    }
+
+    .flex-item img {
+      max-width: 100%;
+      height: auto; /* Allow the image to adjust its height proportionally */
+      max-height: 200px; /* Set a maximum height for the images */
+      width: 100%;
+    }
+    #myCarousel {
+      width: 100%; /* Set the width of the carousel */
+      height: 400px; /* Set the height of the carousel */
+      
+    }
+
+    .carousel-inner {
+      height: 100%; /* Set the height of the carousel inner container */
+    }
+
+    .carousel-item {
+      height: 100%;
+      
+    }
+
+    .carousel-item img {
+      object-fit: cover; /* Ensure the images cover the entire carousel item */
+      width: 100%;
+      height: 100%;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+<section id="center">
+  <div class="container mt-5">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="text-center mb-4">About Us</h2>
+          <img src="c1.jpg" class="d-block w-100" alt="First Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 1</h5>
+           <p class="text-dark" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="c2.jpg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 2</h5>
+           <p class="text-primary" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+      <div class="carousel-item">
+          <img src="c3.jpg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 2</h5>
+           <p class="text-primary" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+      <div class="carousel-item">
+          <img src="c4.jpg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 2</h5>
+           <p class="text-primary" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="c5.jpg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 2</h5>
+           <p class="text-primary" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="c6.jpg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Caption 2</h5>
+           <p class="text-primary" style="color: black;">Some description for the first slide.</p>
+  
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+<div class="container mt-4">
+  
+  <div class="flex-container">
+    <div class="flex-item">
+      <img src="sundar.jpg" alt="Team Member 1" class="img-fluid mb-3">
+      <h4>John Doe</h4>
+      <p>Co-Founder</p>
+    </div>
+    <div class="flex-item">
+      <img src="sundar.jpg" alt="Team Member 2" class="img-fluid mb-3">
+      <h4>Jane Smith</h4>
+      <p>CEO</p>
+    </div>
+    <!-- Add more cards as needed -->
+    <div class="flex-item">
+      <img src="faculty.jpg" alt="Team Member 3" class="img-fluid mb-3">
+      <h4>Faculty</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur a ab cupiditate odio voluptates quod, dolor dignissimos nobis consectetur eum nisi soluta explicabo possimus, recusandae quia nemo laborum perspiciatis..</p>
+    </div>
+    <!-- Repeat the pattern for additional members -->
+    <div class="flex-item">
+   
+      <h4>Institute Goal</h4>
+      <img src="inst goal.jpg" alt="Team Member 3" class="img-fluid mb-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur a ab cupiditate odio voluptates quod, dolor dignissimos nobis consectetur eum nisi soluta explicabo possimus, recusandae quia nemo laborum perspiciatis.</p>
+    </div>
+    <div class="flex-item">
+   
+      <h4>Institue Vision</h4>
+      <img src="vision.jpg" alt="Team Member 3" class="img-fluid mb-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur a ab cupiditate odio voluptates quod, dolor dignissimos nobis consectetur eum nisi soluta explicabo possimus, recusandae quia nemo laborum perspiciatis.</p>
+    </div>
+    <div class="flex-item">
+   
+      <h4>Institute Misssion</h4>
+      <img src="Mission.jpg" alt="Team Member 3" class="img-fluid mb-3">
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quasi adipisci possimus cumque excepturi hic fuga sapiente, at odit! Eaque, vitae aliquam itaque voluptas voluptatem sint soluta placeat ipsum eos.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
