@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar with Hover</title>
+    <style>
+        /* Your existing CSS styles */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease, transform 1.5s ease;
+            animation-range: entry 50% cover 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .about-section,
+        .about2-section {
+            display: flex;
+            align-items: center;
+            background-color: #f3f3f3c0;
+            margin-bottom: 300px;
+            
+        }
+
+        .about-section p,
+        .about-section h2,
+        .about2-section p,
+        .about2-section h2{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            font-family: 'Big Shoulders Text', cursive;
+            font-size: 1.8em;
+            text-transform: uppercase;
+        }
+
+        #example1 {
+            background-image: url(img_flwr.gif), url(paper.gif);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+            position: relative;
+            border: 3px solid gold;
+            overflow: hidden;
+        }
+
+        .grey-box {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #example1 h1,
+        #example1 p {
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            #example1 {
+                padding: 10px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #example1 {
+            animation: fadeIn 1s ease-out;
+        }
+		.opening-time {
+		text-align:right;
+	}
+    .map{
+        text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="course.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="fff2.html">About us</a>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-heading">
+                        Objectives
+                    </h2>
+                    <p class="text-muted">
+                        Upon completion of this course, the participant will have a thorough knowledge of Microsoft Office and can create applications using object-oriented concepts.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="JJ3.png" class="img-fluid reveal" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add some margin-bottom between about-section and about2-section -->
+    <div style="margin-bottom: 40px;"></div>
+
+    <section id="about" class="about2-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="target.jpg" class="card-img-top reveal" alt="About Image">
+                        <div class="card-body">
+                            <h1 class="card-title">Target</h1>
+                            <p class="card-text">Our commitment to quality and exceptional service makes us your top choice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="preq.jpg" class="card-img-top reveal" alt="About Image">
+                        <div class="card-body">
+                            <h1 class="card-title">Preruisites</h1>
+                            <p class="card-text">Discover the extraordinary at Fooddddie's Kitchen with our delicious and diverse cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="overview.jpg" class="card-img-top reveal" alt="About Image">
+                        <div class="card-body">
+                            <h1 class="card-title">Overview</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add some margin-bottom between about2-section and grey-box -->
+    <div style="margin-bottom: 40px;"></div>
+
+    <div class="container mt-4 grey-box reveal">
+        <div id="example1" class="mb-4">
+            <h1 class="display-4">About HTML</h1>
+            <p class="lead">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4 grey-box reveal">
+        <div id="example1" class="mb-4">
+            <h1 class="display-4">About Full stack</h1>
+            <p class="lead">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4 grey-box reveal">
+        <div id="example1" class="mb-4">
+            <h1 class="display-4">About Database Management</h1>
+            <p class="lead">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+	<div class="col-lg-6 opening-time">
+					<h2 class="section-heading">Opening Times</h2>
+					<p class="text-muted">
+						<span>Monday—Thursday: 08:00 — 22:00</span><br>
+						<span>Friday—Saturday: 09:00 — 23:00</span><br>
+						<span>Sunday: 10:00 — 17:00</span>
+					</p>
+					<h2 class="section-heading">Contact</h2>
+					<p class="text-muted">
+						<span>410-602-8008</span><br>
+						<span>dindigul</span><br>
+						<span>Palo-Alto, 1111 CA</span>
+					</p>
+				</div>
+                <div class="map">
+                    <p><strong>Google Maps Location:</strong> <a href="https://g.co/kgs/jFqVioa" target="_blank">View on Google Maps</a></p>
+                </div>
+  
+    <footer class="footer-section text-center">
+        <div class="container">
+            <p>© 2023 CSC computer center dindigul. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const revealItems = document.querySelectorAll('.reveal');
+
+            const revealObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            revealItems.forEach(item => {
+                revealObserver.observe(item);
+            });
+        });
+    </script>
+</body>
+
+</html>
